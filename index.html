@@ -1,68 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/nomalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<header><!-- 页头开始 -->
-		<nav>
-		    <ul>
-				<li class="logo">首页</li>
-				<li><a href="">菜单</a></li>
-				<li><a href="">音乐</a></li>
-				<li><a href="">相册</a></li>
-				<li><a href="">了解我</a></li>
-			</ul>
-		</nav>
-		<div id="banner">
-			<div class="inner">
-				<h1>个人主页</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veritatis cupiditate impedit maiores quidem perspiciatis, omnis</p>
-				
-				<a href='地址'>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="css/nomalize.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/animate.css">
+    <link rel="stylesheet" href="fonts/font/css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    .headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+    .headroom--unpinned {top: -100px;}
+    .headroom--pinned {top: 0;}
+     </style>
+  </head>
+  <body>
+      <nav class="navbar  navbar-fixed-top" style="margin:0px"  role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div id="banner" ><!-- banner图此处 -->
+      <div class="inner">
+        <h1>spacetern</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi veritatis cupiditate impedit maiores quidem perspiciatis, omnis</p>
+        
+        <a href='地址'>
                 <input type='button' id='but' value='了解我'>
                 </a>
-				
-				<p class="more"><a href="##">更多</a></p>
+        
+        <p class="minmore"><a href="##">更多</a></p>
 
-		    </div>
-	    </div>
-	</header><!-- 页头结束 -->
+        </div>
+    </div><!-- banner结束 -->
+    <div class="content"><!-- 第一个部分开始 -->
+      <section class="show">
+      <h1 class="minheader">Lorem ipsum dolor sit ametdsadsadds
+    ！</h1> <!-- 小标题 -->
+      <hr class="hr">
+      
+    </section>
+    <section class="section1">
+      <figure>
+        <img src="img/self.jpeg">
+        <figcaption>
+          <p class="time">时间轴</p>
+        </figcaption>
+      </figure>                           <!-- 段落 -->
+    </section>
+    <section class="section2">
+     <figure>
+        <img src="img/painter.jpeg">
+        <figcaption>
+          <p class="time">画册</p>
+        </figcaption>
+      </figure>                              <!--  段落 -->
+    </section>
+    </div><!-- 第一个部分结束 -->
+    <div class="show"><!-- 第二个部分开始 -->
+      <h1 class="minheader">
+        Lorem ipsum dolor sit amet
+      </h1>
+      <hr class="hr">
+      <section class="box">
+         <section class="p1"></section>
+         <section class="p2"></section>
+         <section class="p3"></section>
+         <section class="p4"></section>
+      </section>
+      
+    </div><!-- 第二个部分结束 -->
+    <div class="more"><!-- 第三个部分开始 -->
+      <h3 class="lastheader">更多关于作者</h3>
+     <div class="icongroup"><!-- 4个小图标 -->
+        <i class=" icon-twitter"></i>
+        <i class="icon-github"></i>
+        <i class="icon-google-plus"></i>
+        <i class=" icon-comments"></i>
+      </div>
+       <hr class="hr">
+    </div><!-- 第三个部分结束 -->
+    <footer id="footer"><!-- 页脚开始 -->
+      <section class="downwriter"></section>
+         <section class="downwriter"></section>
+         <section class="downwriter"></section>
+         <section class="downwriter"></section>
+    </footer><!-- 页脚结束 -->
 
-	<div class="content"><!-- 内容开始 -->
-		<section class="green">
-			<div class="wrapper">
-				<div>
-					<h2>这是一个标题</h2>
-					<div class="hr"></div>
-					<p class="sub-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-				</div>
-				<div class="icon-group">
-					<spen class="icon">item1</spen>
-					<spen class="icon">item2</spen>
-					<spen class="icon">item3</spen>
-				</div>
-			</div>
-		</section>
-		<section class="grey">
-			<div class="article">
-				<div class="text">
-					
-				</div>
-				<div class="pictrue">
-					
-				</div>
-			</div>
-		</section>
-		<section class="purple">
-			<p>nizaisooumsemhnjk</p>
-		</section>
-	</div><!-- 内容结束 -->
-	<footer><!-- 页脚开始 -->
-		
-	</footer><!-- 页脚结束 -->
-</body>
+    
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script  type="text/javascript"  src="js/headroom.js"></script>
+    <script  type="text/javascript"  src="js/jQuery.headroom.js"></script>
+    <script type="text/javascript">
+            $(".navbar-fixed-top").headroom({
+                "tolerance": 5,
+                "offset": 150,
+                "classes": {
+                  "initial": "animated",
+                  "pinned": "flipInX",
+                  "unpinned": "flipOutX"
+                }
+              }); 
+             
+    </script>
+  </body>
 </html>

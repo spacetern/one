@@ -1,119 +1,225 @@
+/*banner开始*/
 
+body{
+	background-color: #3c4252;
+}
 nav{
-	height: 50px;
-	background: #777;
+    background-color: #fff;
+	background: transparent;
 	
 }
-ul{
-	margin: 0px;
-	padding: 0px;
-}
-
-ul .logo{
-	float: left;
-	padding-left: 20px;
-	font-size: 20px;
-	font-weight: 900;
-}
-
-ul li{
-	display: inline-block;
-    float: right;
-    line-height: 50px;
-
-    padding-right: 20px
-    
-}
-ul li a{
-    text-decoration: none;
-    line-height: inherit;
-    display: inline-block;
-    height: inherit;
-    width: 50px
-}
-	
 #banner{
 	width: auto;
 	height: 800px;
-	background-color: #ccc
+	background:rgba(0,0,0,0.9);
+    background: transparent;
+    background: url(../img/banner2.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 
 .inner{
 	max-width: 300px;
 	text-align: center;
 	margin: 0px auto;
-	padding-top: 200px
+	padding-top: 250px;
+    
 }
 
 #banner .inner h1{
 	margin: 0px;
 	max-width: 300px;
-
-}
-
-#but{
-    width:180px;
-    height:50px;
+    font-size: 50px;
+    color: #f9f9f9;
+    letter-spacing: 2px;
 }
 
 
-#banner .inner .more{
-	padding-top: 200px;
+#banner .inner p{
+	font-size: 20px;
+	color:#f9f9f9;
+	letter-spacing: 2px;
 }
-
-#banner .inner .more a{
-	text-decoration:none;
-	font-weight: 900;
-	letter-spacing: 3px
-
-}
-
+/*banner结束，第一个部分开始*/
 .content{
-    top: 0px;
-    height: 800px
-} 
 
-.green{
-	text-align: center;
-	background-color: #089D80;
-	color: #fff;
-	overflow: hidden;
-}
-.wrapper{
-	max-width: 1080px;
-	margin: 0 auto;
-	padding: 100px 0
 }
 
-.green  .hr{
-    width: 100%;
+.show{
+      text-align: center;
+      padding:20px;
+      overflow: hidden;
+
+}
+
+.minheader{
+    padding-top: 100px;
+    color: #ffffff;
+}
+
+.show .hr{
+    
     height: 2px;
-    margin: 20px auto;
-    background-color: #06614f;
-    width: 60%
+    margin: 60px auto;
+    background-color: #c5d8d4;
+    width: 60%;
+    
 
 }
+.section1 figcaption p{
+	transition: 1s;
+	transition-timing-function: ease-out;
+}
 
-.grey{
-	background-color: #081C9D;
-	float: top;
+
+
+.section1{
+	height: 300px;
+	width: 1200px;
+	background-color: #06614f;
+	margin: 20px  auto  80px  auto;
 	overflow: hidden;
+
+	
 }
 
-.sub-heading{
-	font-size:18px ;
+.section2{
+	height: 300px;
+	width: 1200px;
+	background-color:#a4a5a7;
+	margin: 20px  auto  80px  auto;
+	overflow: hidden;
+	
+}
+figure{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	
+}
+
+figure img{
+	position:inherit ;
+	max-width: 100% ;
+	overflow: hidden;
+	opacity: 0.6;
+	transition: all 10s;
+}
+figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	padding: 150px
 
 }
 
-.icon-group{
-	margin-top: 20px
+.time{
+	font-size: 80px;
+    left: 30%;
+    transform: translate(-20px,-250px);
 }
-.green .icon-group .icon{
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	border:2px solid #088c72;
-	transform: rotate(45deg);
-	margin: 20px
+.section1:hover figcaption .time{
+	transform: translate(0px,0px);
 
 }
+
+.section1 img{
+	transform: translate(0px,0px);
+}
+.section1:hover img{
+	transform: translate(0px,-453px);
+    opacity: 0.8;
+}
+
+.section2 img{
+	transform: translate(0px,-370px);
+}
+.section2:hover img{
+	transform: translate(0px,0px);
+	opacity: 0.8;
+
+}
+/*第一个部分结束，第二个部分开始*/
+.box{
+	height: 500px;
+	width: 60%;
+	background-color: #089D80;
+	margin: 100px auto;
+	padding:20px;
+
+}
+
+.p1{
+
+
+}
+
+.p2{
+   color: #ffffff;
+
+}
+
+.p3{
+
+
+}
+
+.p4{
+
+
+}
+
+/*第二个部分结束，第三个部分开始*/
+
+.more{
+	text-align: center;
+	margin: 20px;
+	padding-top: 20px
+}
+.lastheader{
+     letter-spacing: 5px;
+     font-size: 35px;
+     font-weight: 900;
+     color: #f9f9f9;
+}
+
+.icongroup{
+	font-size: 40px;
+	letter-spacing: 10px;
+	margin: 10px;
+	padding: 20px
+
+}
+.icon-twitter{
+	color: #1d96f7;
+}
+.icon-github{
+	color: #a24cb1
+}
+.icon-google-plus{
+	color: #ff5722
+}
+.icon-comments{
+	color: #41c2fd
+}
+.more .hr{
+    height: 2px;
+    margin: 60px auto;
+    background-color: #d5e0de;
+    width: 60%
+}
+/*第三个部分结束，footer开始*/
+
+#footer{
+	background-color: #2F5D61;
+	height: 300px;
+	width: 100%;
+	padding-top: 30px
+}
+
+.downwriter{
+
+}
+/*footer结束*/
